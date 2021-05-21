@@ -1,4 +1,4 @@
-function max_sub_array_of_size_k(k, arr) {
+function max_sub_array_of_size_k(K, arr) {
   let maxSum = 0,
     windowSum = 0,
     windowStart = 0;
@@ -16,7 +16,7 @@ function max_sub_array_of_size_k(k, arr) {
     console.log('maxSum Value:', maxSum);
     console.log();
 
-    if (windowEnd >= k - 1) {
+    if (windowEnd >= K - 1) {
       // make maxSum equal the bigger (maxSum or windowSum)
       maxSum = Math.max(maxSum, windowSum);
       // subtract the element going out
